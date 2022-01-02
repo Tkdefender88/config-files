@@ -141,3 +141,5 @@ export VISUAL=nvim;
 export EDITOR=nvim;
 
 export APIURI="mongodb+srv://battleStateBack:Yv12tPJhOqRpUdAN@cluster0.gep9m.mongodb.net/battleStatedb?retryWrites=true&w=majority"
+
+setxkbmap -option caps:swapescape
