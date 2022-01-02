@@ -1,0 +1,13 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Justin Bak
+	email = tkdefender@protonmail.com
+[alias]
+	ci = commit
+	co = checkout
+	br = branch
+	sup = status
+	yeet = push
+	yoink = pull
+	yank = fetch
