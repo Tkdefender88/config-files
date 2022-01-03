@@ -21,5 +21,7 @@ Adding configuration to repository:
 ----
 
 `config add /path/to/file`
+
 `config commit -m "A Short Message"`
+
 `config push`
