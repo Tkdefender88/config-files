@@ -142,4 +142,6 @@ export EDITOR=nvim;
 
 export APIURI="mongodb+srv://battleStateBack:Yv12tPJhOqRpUdAN@cluster0.gep9m.mongodb.net/battleStatedb?retryWrites=true&w=majority"
 
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 setxkbmap -option caps:swapescape

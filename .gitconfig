@@ -5,9 +5,10 @@
 	email = tkdefender@protonmail.com
 [alias]
 	ci = commit
+	cm = commit -m
 	co = checkout
 	br = branch
-	sup = status
+	sup = status -sb
 	yeet = push
 	yoink = pull
 	yank = fetch
