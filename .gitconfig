@@ -8,7 +8,7 @@
 	cm = commit -m
 	co = checkout
 	br = branch
-	sup = status -sb
+	sup = status -b
 	yeet = push
 	yoink = pull
 	yank = fetch
