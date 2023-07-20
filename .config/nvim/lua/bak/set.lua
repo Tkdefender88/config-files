@@ -21,3 +21,5 @@ vim.opt.colorcolumn = "120"
 vim.opt.termguicolors = true
 
 vim.opt.colorcolumn = "120"
+
+vim.opt.scrolloff = 8
