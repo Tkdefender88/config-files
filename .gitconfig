@@ -2,7 +2,8 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Justin Bak
-	email = tkdefender@protonmail.com
+	email = me@justinbak.com
+	signingkey = 165A0269CC6074CE46FE10C65D6131DC7908D2C4!
 [alias]
 	ci = commit
 	cm = commit -m
@@ -12,3 +13,9 @@
 	yeet = push
 	yoink = pull
 	yank = fetch
+[init]
+	defaultBranch = master
+[commit]
+	gpgsign = false
+[tag]
+	gpgSign = false

@@ -68,14 +68,6 @@ else
 fi
 unset color_prompt force_color_prompt
 
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -124,7 +116,8 @@ fi
 alias vim="nvim"
 alias n="nvim"
 
-export GOBIN=/home/juicetin/go/bin
+export GOPATH=/home/juicetin/go
+export GOBIN=$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$GOBIN
 export PATH=$PATH:/snap/bin
@@ -137,6 +130,18 @@ export PATH="$PATH":"$HOME/flutter/bin"
 export DART_SDK="$HOME/flutter/bin/cache/dart-sdk/bin"
 export PATH="$PATH":"$DART_SDK"
 
+#export ANDROID_HOME="$HOME/Android/Sdk/tools/cmdline-tools/latest/bin"
+#export ANDROID_TOOLS="$HOME/Android/Sdk/tools/cmdline-tools/latest"
+#export ANDROID_PLATFORM_TOOLS="$HOME/Android/Sdk/tools/platform-tools"
+#export PATH="$PATH:$ANDROID_HOME/emulator"
+#export PATH="$PATH:$ANDROID_PLATFORM_TOOLS"
+#export Emulator="$HOME/Android/tools/emulator"
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+
 export VISUAL=nvim;
 export EDITOR=nvim;
 
@@ -144,4 +149,24 @@ export APIURI="mongodb+srv://battleStateBack:Yv12tPJhOqRpUdAN@cluster0.gep9m.mon
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-setxkbmap -option caps:swapescape
+. "$HOME/.cargo/env"
+
+export PATH="$PATH:/home/juicetin/pycharm-community-2023.2.1/bin"
+
+export JAVA_HOME="/usr/lib/jvm/java-1.19.0-openjdk-amd64"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+alias dc="docker compose"
+alias dcu="docker compose up"
+
+export PATH="$PATH:/usr/local/bin"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
