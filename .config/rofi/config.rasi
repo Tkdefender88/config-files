@@ -12,6 +12,8 @@ configuration {
     icon-theme: "Papirus";
 }
 
+@theme "/dev/null"
+
 * {
     text-color:                  #f2f2f2;
     background-color:            #4e4743;
