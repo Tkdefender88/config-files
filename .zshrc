@@ -121,40 +121,21 @@ alias uuid="uuidgen | tr '[:upper:]' '[:lower:]'"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-
-export GOPATH=/home/juicetin/go
-export GOBIN=$GOPATH/bin
 export GOPROXY=direct
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$GOBIN
 export PATH=$PATH:/snap/bin
-export PATH="$PATH:/usr/lib/dart/bin"
-export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="$PATH":"$HOME/bin"
-export PATH="$PATH":"$HOME/flutter/bin"
-export DART_SDK="$HOME/flutter/bin/cache/dart-sdk/bin"
-export PATH="$PATH":"$DART_SDK"
-
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH="$PATH:$ANDROID_HOME/emulator"
-export PATH="$PATH:$ANDROID_HOME/platform-tools"
-export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
 
 export VISUAL=nvim;
 export EDITOR=nvim;
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-export PYTHON="/usr/bin/python2"
-export PATH="$PATH:$HOME/.cargo/bin"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH=$PATH:$HOME/go/bin
-
 fastfetch
-
-# Generated for envman. Do not edit.
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
